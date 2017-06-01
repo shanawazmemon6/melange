@@ -26,9 +26,9 @@
     <value>.jsp</value>
  </property>
  </bean>
-<!--  <bean id="multipartResolver" 
+<bean id="multipartResolver" 
  class="org.springframework.web.multipart.commons.CommonsMultipartResolver" >
- </bean> -->
+ </bean> 
 
  <mvc:resources location="/WEB-INF/resources/images/" mapping="/image/**"></mvc:resources>
   <mvc:resources location="/WEB-INF/resources/videos/" mapping="/video/**"></mvc:resources>

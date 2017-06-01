@@ -94,7 +94,7 @@ color:#ffffff;
 <div class="container-fluid visible-lg  visible-md  text-center"  >
 <div class ="custom_nav">
 <div style="margin-top: 15%;">
-<img   src="image/melange_large.png"  >
+<img   src="image/melange_small.png"  >
 <h3 style=" margin-top:4%;">Exquisite Photography Services</h3>
 <p >"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p><br>
 <button class="btn  btn-outline"   style="margin-top:4%;outline:none; color:#ffffff; font-family:butlerlight;" >Welcome</button>
