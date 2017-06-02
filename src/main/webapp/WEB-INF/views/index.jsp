@@ -1,15 +1,23 @@
 <html>
 <head>
 <meta charset="UTF-8" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                                <!-- meta -->
+<meta charset="ISO-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <meta name="description" content="Mélange Project - Exquisite Photography Services " />	
 <meta name="keywords" content="Melange Project, melange project, the melange project hyderabad, Exquisite Photography Services " />	
-<meta name="google-site-verification" content="zHmWu9Hyr48RgaiqFBkjkgJSRAU7mYFv3_Z0rPuUXOc" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+                                 <!-- bootstrap -->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+                               
+
+                             
+                             <!-- angularjs -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
 
 <link rel="icon" type="image/png" href="image/web_icon.png" >
 <title>Melange Project - Exquisite Photography Services </title>
@@ -45,16 +53,15 @@ video {
       src: url(font/butlerlight.woff);
       }
 	    @font-face {
-      font-family: butlermedium;
-      src: url(font/butlermedium.woff);
+      font-family: butleregular;
+      src: url(font/butleregular.woff);
       }
       .btn{
-      padding: 14px 24px;
+      padding: 10px 20px;
       background: none;
-    font-weight: 700;
     letter-spacing: 1px;
     text-transform: uppercase;
-      border-radius:8px;
+      border-radius:0px;
     
       }
     .btn-outline{
@@ -73,12 +80,13 @@ video {
        .btn-outline:focus{
              outline:none;
        }
-p,button{
-color:#ffffff; 
+.light{
+color:#ffffff;
+font-size:15px; 
 font-family:butlerlight;
 }
-h1,h2,h3,h4,h5,h6 {
-	color:#ffffff; font-family:butlermedium;
+.regular{
+	color:#ffffff; font-family:butleregular;
 }
 
 i{
@@ -90,22 +98,22 @@ color:#ffffff;
 
 </head>
 
-<body >
-<div class="container-fluid visible-lg  visible-md  text-center"  >
+<body ng-app="myApp">
+<div class="container-fluid visible-lg    text-center"  >
 <div class ="custom_nav">
 <div style="margin-top: 15%;">
-<img   src="image/melange_small.png"  >
-<h3 style=" margin-top:4%;">Exquisite Photography Services</h3>
-<p >"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p><br>
-<button class="btn  btn-outline"   style="margin-top:4%;outline:none; color:#ffffff; font-family:butlerlight;" >Welcome</button>
+<img   src="image/melang_small_large.png"  >
+<h3 style=" margin-top:3%;" class="regular">Exquisite  Photography  Services</h3>
+<p class="light">"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p><br>
+<a class="btn  btn-outline light" href="home"   style="margin-top:3%;outline:none; color:#ffffff;"  >Welcome</a>
 </div>
 
 <div style=" margin-top:4%;" >
 
-<i class="fa fa-instagram fa-2x" style="padding: 2px;" aria-hidden="true"></i>
-<i class="fa fa-facebook-official fa-2x" style="padding: 2px;" aria-hidden="true"></i>
-<i class="fa fa-youtube-square fa-2x" style="padding: 2px;" aria-hidden="true"></i>
-<i class="fa fa-vimeo-square fa-2x" style="padding: 2px;" aria-hidden="true"></i>
+<i class="fa fa-instagram fa-lg" style="margin: 0.4%;" aria-hidden="true"></i>
+<i class="fa fa fa-facebook fa-lg" style="margin: 0.4%" aria-hidden="true"></i>
+<i class="fa fa-youtube-play fa-lg" style="margin:0.4%" aria-hidden="true"></i>
+<i class="fa fa fa-vimeo fa-lg" style="margin: 0.4%" aria-hidden="true"></i>
 
 </div>
 </div>

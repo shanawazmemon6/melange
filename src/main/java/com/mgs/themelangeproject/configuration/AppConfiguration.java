@@ -14,6 +14,8 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+import com.mgs.themelangeproject.dataobjects.WelcomeDo;
+
 @Configuration
 @ComponentScan("com.mgs.themelangeproject")
 @EnableTransactionManagement
@@ -34,8 +36,8 @@ public class AppConfiguration {
 	public Properties getHibernateProperties() {
 
 		Properties p = new Properties();
-/*		p.setProperty("hibernate.hbm2ddl.auto", "update");
-*/
+		p.setProperty("hibernate.hbm2ddl.auto", "update");
+
 		p.put("hibernate.dialect", "org.hibernate.dialect.Oracle10gDialect");
 
 		System.out.println("properties Flink");
@@ -49,7 +51,7 @@ public class AppConfiguration {
 
 		LocalSessionFactoryBuilder session = new LocalSessionFactoryBuilder(source);
 		session.addProperties(getHibernateProperties());
-
+        session.addAnnotatedClass(WelcomeDo.class);
 		return session.buildSessionFactory();
 
 	}

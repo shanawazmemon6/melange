@@ -13,4 +13,9 @@ public class RoutingToView {
 		return "index";
 	}
 
+	@RequestMapping("/home")
+	public String index(){
+		
+		return "navigate";
+	}
 }
